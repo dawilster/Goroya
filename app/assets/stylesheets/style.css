@@ -6,6 +6,7 @@ body{
 p{
 	font-family: 'Average', serif;
 	font-size:18px;
+	line-height:24px;
 }
 h1,h2,h3,h4{
 	font-family: 'Crete Round', serif;
@@ -33,6 +34,7 @@ h1,h2,h3,h4{
 	border-top:1px dashed #d8d8d8;
 	padding-top:15px;
 	margin-top:15px;
+	text-align: left;
 }
 .footer p{
 	color:#989898;	

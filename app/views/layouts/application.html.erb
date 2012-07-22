@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gist</title>
+  <title><%= @page_title || 'Goroya | Blogging for Hackers'%> - Goroya.com</title>
   	<%= stylesheet_link_tag "bootstrap.min", :media => "all" %>  
   	<%= stylesheet_link_tag "style", :media => "all" %>  
 <link href='http://fonts.googleapis.com/css?family=Average|Crete+Round' rel='stylesheet' type='text/css'>
@@ -13,7 +13,7 @@
 		<%= yield %>
 		<div class="footer">
 			<p>
-				Check out the github repo here</br>
+				Check out the <a href="#">github repo</a> and <a href="#">post issues there</a></br>
 				Goroya.com by William Porter
 			</p>
 		</div>	

@@ -3,10 +3,11 @@ class FetchController < ApplicationController
 	require 'RDiscount'
 
 	def index
-
+		params[:id] = '3155667'
 		@gist = Post.find('3155667')
 		@content = @gist.content			
 		@desc = @gist.name		
+		@user = @gist.gist_id
 		render :action => 'show'
 	end
 
@@ -47,7 +48,7 @@ class FetchController < ApplicationController
 				@gist.save
 			end
 		end
-
+		@page_title = @desc
 	end
 
 	def not_found
