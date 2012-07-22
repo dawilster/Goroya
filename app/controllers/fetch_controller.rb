@@ -3,8 +3,8 @@ class FetchController < ApplicationController
 	require 'rdiscount'
 
 	def index
-		params[:id] = '3155667'
-		@gist = Post.find('3155667')
+		params[:id] = '3158870'
+		@gist = Post.find('3158870')
 		@content = @gist.content			
 		@desc = @gist.name		
 		@user = @gist.gist_id
