@@ -13,7 +13,6 @@ class FetchController < ApplicationController
 
 	def show
 		if params[:up] == 'update'
-
 			@response = HTTParty.get("https://api.github.com/gists/#{params[:id]}")		
 			@gist = Post.find(params[:id])	
 			@gist.name = @response["description"]		
@@ -44,8 +43,9 @@ class FetchController < ApplicationController
 				end
 				@gist.content = @content = RDiscount.new(@content).to_html
 				@gist.id = params[:id]
-				@gist.gist_id = @response["user"]["login"]
+				@gist.gist_id = @user = @response["user"]["login"]
 				@gist.save
+
 			end
 		end
 		@page_title = @desc
