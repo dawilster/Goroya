@@ -43,7 +43,11 @@ class FetchController < ApplicationController
 				end
 				@gist.content = @content = RDiscount.new(@content).to_html
 				@gist.id = params[:id]
-				@gist.gist_id = @user = @response["user"]["login"]
+				if @response["user"] != nil
+					@gist.gist_id = @user = @response["user"]["login"]
+				else
+					@gist.gist_id = @user = 'anonymous'
+				end	
 				@gist.save
 
 			end
