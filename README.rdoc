@@ -1,16 +1,3 @@
 == Welcome to Goroya
 
 Goroya is a simple application built using rails that let's you publish blog posts using nothing but github's gist's.
-
-
-  <VirtualHost *:80>
-    ServerName goroya.com
-    ServerAlias www.goroya.com
-    DocumentRoot /home/william/goroya.com/public
-      <Directory /home/william/goroya.com/public>
-              Options Indexes FollowSymLinks MultiViews
-              AllowOverride All
-              Order allow,deny
-              allow from all
-      </Directory>
-  </VirtualHost>
