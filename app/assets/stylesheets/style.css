@@ -1,0 +1,42 @@
+body{
+	background: #ffffff;
+	font-family: 'Average', serif;
+
+}
+p{
+	font-family: 'Average', serif;
+	font-size:18px;
+}
+h1,h2,h3,h4{
+	font-family: 'Crete Round', serif;
+	font-weight:normal;	
+	margin-bottom:5px;
+}
+#header{
+	font-family: 'Crete Round', serif;
+	text-align:center;
+	font-size:35px;
+	margin-bottom:20px;
+}
+.container{
+	width:800px;
+}
+.details{
+	margin:50px 0 35px 0px;
+	color:#989898;
+	font-size:14px;	
+}
+.details a{
+	color:#989898;	
+}
+.footer{
+	border-top:1px dashed #d8d8d8;
+	padding-top:15px;
+	margin-top:15px;
+}
+.footer p{
+	color:#989898;	
+	font-style:italic;
+	font-size:15px;
+	margin-bottom:5px;
+}

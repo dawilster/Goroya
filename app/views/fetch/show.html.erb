@@ -1,0 +1,7 @@
+<div class="details">
+	<%= link_to "gist ##{params[:id]}", "https://gist.github.com/#{params[:id]}" %>
+	 - author <%= link_to "#{@user}", "https://github.com/#{@user}" %>
+</div>
+<h1 id="header"><%= @desc %></h1>
+<%= @content.html_safe%>
+
