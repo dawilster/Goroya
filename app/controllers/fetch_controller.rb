@@ -1,6 +1,6 @@
 class FetchController < ApplicationController
 	include HTTParty
-	require 'RDiscount'
+	require 'rdiscount'
 
 	def index
 		params[:id] = '3155667'
